@@ -27,13 +27,13 @@ class Details extends React.Component {
     return (
       <div className="details">
         <Carousel media={media} />
-        <NewComponent text={"Good Dog"} />
-        <div>
-          <h1>{name}</h1>
-          <h2>{`${animal} - ${breed} - ${location}`}</h2>
-          <button>Adopt {name}</button>
-          <p>{description}</p>
-        </div>
+        <NewComponent
+          name={name}
+          animal={animal}
+          breed={breed}
+          location={location}
+          description={description}
+        />
       </div>
     );
   }
